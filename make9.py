@@ -15,7 +15,7 @@ nextNumber = random.random()
 
 #Asks user if they would like more points --> then adds points to total score
 while userInput == "y" and score < 9.0:
-	nextNumber = random.random()
+	nextNumber = random.random()*3
 	userInput = raw_input("Your score is " + str(score) + " Would you like more points? (y or n): ")
 	score = score + nextNumber
 	score = round(score,1)
